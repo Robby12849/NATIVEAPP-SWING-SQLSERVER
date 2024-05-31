@@ -69,6 +69,7 @@ public class ScuolaFrame extends JFrame implements ActionListener {
         panButton.add(btnEliminaScuola);
         panButton.add(btnOpenAlunnoFrame);
         panButton.add(btnStatus);
+        btnStatus.setEnabled(false);
         panTable.add(new JScrollPane(tblvisual));
         add(panScuola, BorderLayout.NORTH);
         add(panButton, BorderLayout.CENTER);

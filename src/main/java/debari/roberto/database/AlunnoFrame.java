@@ -41,9 +41,9 @@ public class AlunnoFrame extends JFrame implements ActionListener {
     private JTextField txtdatan = new JTextField(10);
 
     private JPanel panPulsanti = new JPanel();
-    private JButton btndelete = new JButton("Elimina");
-    private JButton btnadd = new JButton("Inserisci");
-    private JButton btnvisual = new JButton("Visualizza");
+    private JButton btndelete = new JButton("Elimina alunno");
+    private JButton btnadd = new JButton("Inserisci alunno");
+    private JButton btnvisual = new JButton("Visualizza alunni");
     private JButton btnStatus = new JButton("Connessione");
     private JButton btnOpenScuolaFrame = new JButton("Gestisci Scuole");
 
@@ -82,6 +82,8 @@ public class AlunnoFrame extends JFrame implements ActionListener {
         panPulsanti.add(btnOpenScuolaFrame);
         panPulsanti.add(btnStatus);
 
+        btnStatus.setEnabled(false);
+        
         JScrollPane scrollPane = new JScrollPane(tblvisual);
         pan.add(scrollPane);
         this.add(panDati, layout1.NORTH);
